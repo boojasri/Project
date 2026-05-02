@@ -1,0 +1,99 @@
+*{
+    background-color: rgb(155, 119, 107);
+    text-align: center;
+    color:white;
+    margin: 0 px;
+}
+
+.header{
+    background-color: rgb(48, 85, 172);
+    padding: 40px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+h1{
+    background-color: transparent;
+}
+
+label{
+    background-color: transparent;
+    color: rgb(243, 232, 29);
+    font-size: large;
+    font-weight: 700;
+}
+
+#categories{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.cards{
+    background-color: rgba(255,255,255,0.4);
+    padding: 15px;
+    border: 2px solid white;
+    flex: 1 1 300px;
+    border-radius: 20px 20px 0px 0px;
+    border-top: 4px solid rgb(0, 172, 255);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cards:hover{
+    transform: scale(1.02);
+}
+
+.model-overlay{
+    display: none; 
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.8);
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.model-content{
+    background-color: white;
+    padding: 30px;
+    color: black;
+    border-radius: 15px;
+    max-width: 600px;
+    position: relative;
+    width: 60%;
+    text-align: left;
+    left: 30%;
+    right: 30%;
+    top:30%;
+    bottom: 30%;
+}
+
+#close-btn{
+    position: absolute;
+    right: 20px;
+    background-color: transparent;
+    color: orangered;
+    cursor: pointer;
+    top: 10px;
+}
+
+#model-title{
+    color:orangered;
+}
+
+#model-content{
+    background-color: transparent;
+    color: black;
+}
